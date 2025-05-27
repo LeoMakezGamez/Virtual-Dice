@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Title at the top, this won't affect other widgets -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual Dice"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <!-- Dice container -->
+    <LinearLayout
+        android:id="@+id/diceContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- Roll button -->
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:textSize="26sp" />
+
+    <!-- Total Score -->
+    <TextView
+        android:id="@+id/totalScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total: 0"
+        android:textSize="20sp" />
+
+    <!-- Add and Remove Dice buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Dice"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonRemoveDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Remove Dice"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
